@@ -1,0 +1,41 @@
+{
+    "name": "Actionsboard",
+    "alias": "actionsboard",
+    "description": "",
+    "keywords": [],
+    "active": 1,
+    "order": 0,
+    "providers": [
+        "Modules\\Actionsboard\\Providers\\ActionsboardServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "standalone": true,
+    "show_permissions": false,
+    "requires": [],
+    "pages": {
+        "problems": {
+            "super_admin_only": true,
+            "group": "actions",
+            "icon": "construction",
+            "render": {
+                "data": "Problem",
+                "type": "kanban",
+                "options": {
+                    "stage_field": "step",
+                    "category_field": "type",
+                    "actions_field": "actions"
+                },
+                "searchKeys": [
+                    "name",
+                    "type",
+                    "description"
+                ],
+                "filters": [
+                    "type",
+                    "priority"
+                ]
+            }
+        }
+    }
+}

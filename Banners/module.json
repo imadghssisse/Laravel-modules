@@ -1,0 +1,16 @@
+{
+    "name": "Banners",
+    "alias": "banners",
+    "description": "",
+    "force_active": 1,
+    "active": 1,
+    "order": 0,
+    "providers": [
+        "Modules\\Banners\\Providers\\BannersServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "standalone": true,
+    "show_permissions": false,
+    "requires": []
+}
